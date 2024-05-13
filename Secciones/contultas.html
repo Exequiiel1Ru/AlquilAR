@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas</title>
+    <link rel="icon" href="../img/alquilARCodoaCodo.ico" type="image/x-icon">
+    <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><i class="bi bi-house-heart"></i> AlquilAR</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Secciones/propiedades.html">Propiedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservas.html">Reservas</a>
+                    </li>
+                    <!--li class="nav-item">
+                        <a class="nav-link" href="../Secciones/contacto.html">Contacto</a>
+                    </li-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Contenido principal -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <!-- Aside izquierdo -->
+            <aside class="col-lg-3 aside" id="asideIzquierdo">
+                <h5 class="aside-title">Tenemos importantes descuentos para vos!!</h5>
+                <p>Descubre las increíbles ofertas del Banco Patagonia y disfruta de unas vacaciones inolvidables con un 20%
+                    de descuento y promociones exclusivas. Desde relajantes días en la playa hasta emocionantes aventuras
+                    en la montaña, aprovecha esta oportunidad para crear recuerdos inolvidables con tus seres queridos. <br>
+                    ¡No dejes pasar esta oportunidad única de viajar más y gastar menos!</p>
+                <img src="../img/bancopatagonia.jpg.png" alt="Imagen de ejemplo 1" style="width: 100%;">
+                <button class="btn btn-primary btn-block mt-3 btn-recibir-informacion">Quiero recibir más información</button>
+            </aside>
+            <!-- Contenido del formulario -->
+            <div class="col-lg-6">
+                <div class="alert alert-primary" role="alert">
+                    <p class="horarios-disponibles">Nuestros Horarios son de Lunes a Sábados de 8:30 a 20:30 hs. ¿Necesitas una cita para una mejor Atención? Agéndala.</p>
+                </div>
+                <form id="formularioCita">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" placeholder=" Ingrese su Nombre " id="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="apellido" class="form-label">Apellido:</label>
+                        <input type="text" class="form-control" placeholder=" Ingrese su apellido" id="apellido" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="dni" class="form-label">DNI:</label>
+                        <input type="text" class="form-control" placeholder="Ingrese su Numero de DNI" id="dni">
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Teléfono:</label>
+                        <input type="tel" class="form-control" placeholder=" Ingrese su Numero de telefono " id="telefono">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" placeholder="Ingrese su Email" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="fecha" class="form-label">Elige la fecha:</label>
+                        <input type="date" class="form-control" id="fecha" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="hora" class="form-label">Elige la hora:</label>
+                        <select class="form-select" id="hora">
+                            <option value="08:30">08:30</option>
+                            <option value="09:00">09:00</option>
+                            <option value="09:30">09:30</option>
+                            <option value="10:00">10:00</option>
+                            <option value="10:30">10:30</option>
+                            <option value="11:00">11:00</option>
+                            <option value="11:30">11:30</option>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                            <option value="14:00">14:00</option>
+                            <option value="14:30">14:30</option>
+                            <option value="15:00">15:00</option>
+                            <option value="15:30">15:30</option>
+                            <option value="16:00">16:00</option>
+                            <option value="16:30">16:30</option>
+                            <option value="17:00">17:00</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                        </select>
+                    </div>
+                     <div class="mb-3">
+                    <label for="categoria" class="form-label">Categoría </label>
+                        <select class="form-select" id="categoria" name="categoria" title="Por favor, seleccione una categoría. Este campo es obligatorio." required>
+                          <option value="">Seleccionar...</option>
+                          <option value="consulta">Consulta</option>
+                          <option value="reclamo">Reclamo</option>
+                          <option value="sugerencia">Sugerencia</option>
+                          <option value="otro">Otro</option>
+                        </select>
+                        <div class="invalid-feedback">Por favor, seleccione una categoría. Este campo es obligatorio.</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="comentarios" class="form-label">Comentarios </label>
+                        <textarea class="form-control" id="comentarios" placeholder="Por favor agregue un comentario explicando el motivo de la consulta.." name="comentarios" rows="3" title="Por favor, ingrese su consulta. Este campo es obligatorio." required></textarea>
+                        <div class="invalid-feedback">Por favor, ingrese su consulta. Este campo es obligatorio.</div>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="copiacorreo" name="copiacorreo">
+                        <label class="form-check-label" for="copiacorreo">Quiero recibir una copia del mensaje en mi correo electrónico</label>
+                      </div>
+                      <div class="text-center">
+                        <!--button type="submit" class="btn btn-primary btn-agendar-cita">Agendar Cita</button-->
+                        <button type="submit" class="btn btn-primary btn-agendar-cita" onclick="validarCampos()">Agendar Cita</button>
+
+                    </div>
+                </form>
+            </div>
+
+            <!-- Aside derecho -->
+            <aside class="col-lg-3 aside" id="asideDerecho">
+                <h5 class="aside-title">Próximamente tendremos nuevos destinos!!</h5>
+                <p>alquilAR se expande y proximente tendremos chapadmalal como destino, si estas interesado en unas vacaciones unicas e inolvidables para vos y tu familia
+                    no dudes en contactarte con nuestros asesores, ellos te pasaran toda la informacion necesaria y los precios mas accesibles para que puedas disfrutar de tus 
+                    merecidas vacaciones, ¿Que estas esperando? No te quedes sin tu lugar.</p>
+                <img src="../img/chapadmalal.jpg.png" alt="Imagen de Chapadmalal" style="width: 100%;">
+                <button class="btn btn-primary btn-block mt-3 btn-recibir-informacion">Quiero recibir más información</button>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Asesores -->
+    <h3 class="asesores text-center">CONOCE A NUESTROS ASESORES!</h3>
+    <div id="contenedores" class="container">
+        <div class="row">
+            <!-- Contenedor del primer asesor -->
+            <div class="col-md-3">
+                <div class="horario-contenedor">
+                    <img src="../img/hombre1.jpg" alt="Imagen 1">
+                    <p>Juan Perez. Excelente asesor, él está capacitado para recomendarte la mejor estancia y al mejor precio para tus vacaciones.</p>
+                </div>
+            </div>
+            <!-- Contenedor del segundo asesor -->
+            <div class="col-md-3">
+                <div class="horario-contenedor">
+                    <img src="../img/mujer4.jpg" alt="Imagen 2">
+                    <p>Ana Rodríguez. Excelente asesora, ella está capacitada para recomendarte la mejor estancia y al mejor precio para tus vacaciones.</p>
+                </div>
+            </div>
+            <!-- Contenedor del tercer asesor -->
+            <div class="col-md-3">
+                <div class="horario-contenedor">
+                    <img src="../img/hombre3.jpg" alt="Imagen 3">
+                    <p>Federico Ruiz. Excelente asesor, él está capacitado para recomendarte la mejor estancia y al mejor precio para tus vacaciones.</p>
+                </div>
+            </div>
+            <!-- Contenedor del cuarto asesor -->
+            <div class="col-md-3">
+                <div class="horario-contenedor">
+                    <img src="../img/hombre2.jpg" alt="Imagen 4">
+                    <p>Lucas Maldonado. Excelente asesor, él está capacitado para recomendarte la mejor estancia y al mejor precio para tus vacaciones.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white mt-5">
+        <!-- Contenido del pie de página -->
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Síguenos en redes sociales</h5>
+                    <p>¡Mantente al tanto de nuestras últimas noticias y ofertas especiales!</p>
+                    <div class="social-links">
+                        <a href="https://www.twitter.com" target="_blank" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.facebook.com" target="_blank" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.pinterest.com" target="_blank" class="text-white me-3"><i class="bi bi-pinterest"></i></a>
+                        <a href="https://www.instagram.com" target="_blank" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-geo-alt-fill"></i> Dirección: Av. Principal 123, Ciudad</li>
+                        <li><i class="bi bi-telephone-fill"></i> Teléfono: +123456789</li>
+                        <li><i class="bi bi-envelope-fill"></i> Email: codoacodo@hotmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-secondary text-white text-center py-2">
+            <p class="footer-text">© 2024 Codo a Codo | Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Contenedor del mensaje de cita agendada -->
+    <div id="contenedorMensaje" class="mensaje-contenedor">
+        <!-- Contenido del mensaje -->
+        <p id="textoMensaje"></p>
+        <img id="imagenAsesor" src="../img/alquilARCodoaCodo.ico" alt="" style="max-width: 600px;">
+        <p id="descripcionAsesor"></p>
+        <span class="btn-cerrar" onclick="cerrarMensaje()"><i class="bi bi-x-lg"></i></span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-L4L0GiVCqLuvj3h0zqGXceKwFmMvLEZndH7yvGAXtNY7sVvmFUTLg41DlqTzWdrN" crossorigin="anonymous"></script>
+    <!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-bZiz5FlH6lPA+L6sqJhzpH1TqFawgfwFnQxZpw5WCXrk2fYCclpfCzspJKnWgsrV" crossorigin="anonymous"></script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="../js/main.js"></script>
+
+</body>
+</html>
